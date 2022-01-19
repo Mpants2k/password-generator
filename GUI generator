@@ -1,16 +1,22 @@
+#importing the random module to make the random input work and the tkinter because that's how the GUI works
 import random
 from tkinter import *
 
+#creating list of characters
 ch_list = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
+#creating the screen for things to be printed on
 root = Tk()
 root.geometry("250x200")
 
+#creating the text the password will be input into
 password = Text(root, height=1)
 
+#making the exit command so you can easily quit the program
 def exit():
     root.destroy()
 
+#creating the command that will input and print the characters onto the screen 
 def gen():
     ch_1 = random.choice(ch_list)
     ch_2 = random.choice(ch_list)
@@ -34,10 +40,13 @@ def gen():
 
 password.configure(bg=root.cget('bg'), relief="flat")
 
+#placing the button that will run the exit command
 quit = Button(root, text="quit", command=exit)
 quit.place(x=105, y=45)
 
+#placing the button that will run the generator command
 button = Button(root, text="generate password", command=gen)
 button.pack()
 
+#this makes the whole thing work correctly
 root.mainloop()
