@@ -1,0 +1,22 @@
+import random
+
+ch_list = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+ch_1 = random.choice(ch_list)
+ch_2 = random.choice(ch_list)
+ch_3 = random.choice(ch_list)
+ch_4 = random.choice(ch_list)
+ch_5 = random.choice(ch_list)
+ch_6 = random.choice(ch_list)
+ch_7 = random.choice(ch_list)
+ch_8 = random.choice(ch_list)
+ch_9 = random.choice(ch_list)
+ch_10 = random.choice(ch_list)
+ch_11 = random.choice(ch_list)
+ch_12 = random.choice(ch_list)
+ch_13 = random.choice(ch_list)
+ch_14 = random.choice(ch_list)
+ch_15 = random.choice(ch_list)
+ch_16 = random.choice(ch_list)
+
+print(ch_1 + ch_2 + ch_3 + ch_4 + ch_5 + ch_6 + ch_7 + ch_8 + ch_9 + ch_10 + ch_11 + ch_12 + ch_13 + ch_14 + ch_15 + ch_16)
